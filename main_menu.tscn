@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://5lqwscwn7q3y"]
+
+[ext_resource type="Script" uid="uid://tqlr1fgf6gtj" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_06t4h")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.08235294, 0.1764706, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 383.0
+offset_top = 100.0
+offset_right = 816.0
+offset_bottom = 167.0
+theme_override_font_sizes/font_size = 48
+text = "Blacksmith's Forge"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 519.0
+offset_top = 302.0
+offset_right = 719.0
+offset_bottom = 362.0
+text = "Start Forging"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
