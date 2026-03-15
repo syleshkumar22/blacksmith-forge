@@ -1,6 +1,7 @@
-Button
 Label
 ColorRect
 Control
+ProgressBar
+Button
 CanvasLayer
 Node

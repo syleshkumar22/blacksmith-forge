@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1773595708
+::res://::1773607933
 icon.svg::CompressedTexture2D::2791333482010526634::1769139724::1769139730::1::::<><><>0<>0<>9f26bfe43c116260dc684712909f5ced<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main_menu.gd::GDScript::1367317692216032111::1769141693::0::1::::<>Node<><>0<>0<><>::
-main_menu.tscn::PackedScene::2129385173313940512::1769142629::0::1::::<><><>0<>0<><>::uid://tqlr1fgf6gtj::::res://main_menu.gd
-metal_bar.gd::GDScript::8146195197914568030::1769143009::0::1::::<>ColorRect<><>0<>0<><>::
-workshop.gd::GDScript::7337304872468438851::1769141905::0::1::::<>Node<><>0<>0<><>::
-workshop.tscn::PackedScene::9042996357861761686::1769143009::0::1::::<><><>0<>0<><>::uid://dcsilsgd4slct::::res://workshop.gd<>uid://doccv6kxpfbc5::::res://metal_bar.gd
+main_menu.gd::GDScript::7869105825025497297::1773598483::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::2129385173313940512::1773598487::0::1::::<><><>0<>0<><>::uid://dkd4a14ymn442::::res://main_menu.gd
+metal_bar.gd::GDScript::8146195197914568030::1773601364::0::1::::<>ColorRect<><>0<>0<><>::
+workshop.gd::GDScript::4855539666617906730::1773601440::0::1::::<>Control<><>0<>0<><>::
+workshop.tscn::PackedScene::9042996357861761686::1773601518::0::1::::<><><>0<>0<><>::uid://cbgca8oedfotu::::res://workshop.gd<>uid://doccv6kxpfbc5::::res://metal_bar.gd
