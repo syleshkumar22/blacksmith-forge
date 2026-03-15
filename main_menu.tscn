@@ -1,10 +1,14 @@
 [gd_scene load_steps=2 format=3 uid="uid://5lqwscwn7q3y"]
 
-[ext_resource type="Script" uid="uid://tqlr1fgf6gtj" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://dkd4a14ymn442" path="res://main_menu.gd" id="1_06t4h"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_06t4h")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -12,27 +16,38 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1152.0
-offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0.08235294, 0.1764706, 1)
+color = Color(0.011076468, 0.0018021477, 0.18504664, 1)
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 383.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -72.5
 offset_top = 100.0
-offset_right = 816.0
-offset_bottom = 167.0
-theme_override_font_sizes/font_size = 48
+offset_right = 72.5
+offset_bottom = 123.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
 text = "Blacksmith's Forge"
+horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 519.0
-offset_top = 302.0
-offset_right = 719.0
-offset_bottom = 362.0
+custom_minimum_size = Vector2(300, 80)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "Start Forging"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

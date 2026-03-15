@@ -1,50 +1,82 @@
 [gd_scene load_steps=3 format=3 uid="uid://d13q3gd1h4lic"]
 
-[ext_resource type="Script" uid="uid://dcsilsgd4slct" path="res://workshop.gd" id="1_qrwm2"]
+[ext_resource type="Script" uid="uid://cbgca8oedfotu" path="res://workshop.gd" id="1_qrwm2"]
 [ext_resource type="Script" uid="uid://doccv6kxpfbc5" path="res://metal_bar.gd" id="2_4mwdg"]
 
 [node name="Workshop" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_qrwm2")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 1151.0
-offset_bottom = 640.0
-color = Color(0.1494745, 0.14947453, 0.1494745, 1)
-
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = 50.0
-offset_top = 50.0
-offset_right = 200.0
-offset_bottom = 100.0
-text = "Back to Menu"
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14586785, 0.14586785, 0.14586785, 1)
 
 [node name="Forge" type="ColorRect" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
 offset_left = 100.0
-offset_top = 400.0
-offset_right = 300.0
-offset_bottom = 550.0
-color = Color(0.6068666, 0.28922576, 0.14120549, 1)
+offset_top = -330.0
+offset_right = 400.0
+offset_bottom = -130.0
+grow_vertical = 0
+color = Color(0.77798927, 0.4769048, 0.22689912, 1)
 
 [node name="MetalBar" type="ColorRect" parent="."]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
 offset_left = 130.0
-offset_top = 450.0
-offset_right = 270.0
-offset_bottom = 490.0
-color = Color(0.37036446, 0.3703645, 0.37036446, 1)
+offset_top = -230.0
+offset_right = 370.0
+offset_bottom = -200.0
+grow_vertical = 0
+color = Color(0.39118537, 0.39118534, 0.39118534, 1)
 script = ExtResource("2_4mwdg")
+
+[node name="pot" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 213.0
+offset_top = -331.0
+offset_right = 359.0
+offset_bottom = -308.0
+grow_vertical = 0
+text = "cauldron"
 
 [node name="TemperatureLabel" type="Label" parent="."]
 layout_mode = 1
-offset_left = 130.0
-offset_top = 420.0
-offset_right = 276.0
-offset_bottom = 443.0
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 180.0
+offset_top = -280.0
+offset_right = 326.0
+offset_bottom = -257.0
+grow_vertical = 0
 text = "Temperature: 20°C"
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 1
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 250.0
+offset_bottom = 110.0
+text = "Back to Menu"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
